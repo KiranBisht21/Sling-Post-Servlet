@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Access Resources In DropDown</title>
+</head>
+<body data-sly-use.resource="myproject.core.Htl.AccessResource">
+<div class="container">
+    <div class="itemList" data-sly-list.myitemsList="${resource.myItemsList}">
+        <ul>
+            <li data-sly-test="${myitemsList.text}"></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
